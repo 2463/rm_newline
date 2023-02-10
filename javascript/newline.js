@@ -9,7 +9,7 @@ function get_text() {
 }
 
 function remove_newline(text) {
-    if (document.getElementById("InsertSpace").value == 'on') {
+    if (document.getElementById("InsertSpace").checked) {
         return text.replace(/\r?\n/g, " ")
     } else {
         return text.replace(/\r?\n/g, "")
